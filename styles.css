@@ -1,0 +1,25 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    color: rgb(242,242,247);
+    background-color: rgb(28,28,30);
+}
+
+form {
+    margin: 0.5em 0.5em 0.5em 1em;
+}
+
+form > input {
+    margin: 0.5em 0.5em 0.5em 0.5em;
+
+    color: rgb(242,242,247);
+    background-color: rgb(72,72,75);
+}
+
+h1 {
+    margin: 0.5em;
+    color: rgb(255,45,85);
+}

@@ -8,24 +8,25 @@
     <title>PEPEJSON</title>
 </head>
 <body>
+    <h1>PEPE JSON MAKER</h1>
     <form>
         <label for="asset">Asset Name</label><br>
-        <input type="text" id="asset" name="asset"><br>
+        <input type="text" id="asset" name="asset" placeholder="EXAMPLEPEPE"><br>
 
         <label for="issuer_address">Issuer Address</label><br>
-        <input type="text" id="issuer_address" name="issuer_address"><br>
+        <input type="text" id="issuer_address" name="issuer_address" placeholder="XCP Address"><br>
 
         <label for="owner_address">Owner Address</label><br>
-        <input type="text" id="owner_address" name="owner_address"><br>
+        <input type="text" id="owner_address" name="owner_address" placeholder="XCP Address"><br>
 
         <label for="supply">Supply</label><br>
-        <input type="text" id="supply" name="supply"><br>
+        <input type="text" id="supply" name="supply" placeholder="Asset supply"><br>
 
-        <label for="thumbnail">Image Thumbnail URL</label><br>
-        <input type="text" id="thumbnail" name="thumbnail"><br>
+        <label for="thumbnail">48 x 48px Image Thumbnail URL</label><br>
+        <input type="text" id="thumbnail" name="thumbnail" placeholder="http://i.imgur.com/pepe.png"><br>
 
-        <label for="image">400 x 560 Image URL</label><br>
-        <input type="text" id="image" name="image"><br>
+        <label for="image">400 x 560px Image URL</label><br>
+        <input type="text" id="image" name="image" placeholder="http://i.imgur.com/pepe.png"><br>
 
         <input type="submit" onClick="createJSON();" value="Save As JSON">
     </form>
