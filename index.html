@@ -9,27 +9,86 @@
 </head>
 <body>
     <h1>PEPE JSON MAKER</h1>
-    <form>
-        <label for="asset">Asset Name</label><br>
-        <input type="text" id="asset" name="asset" placeholder="EXAMPLEPEPE"><br>
+    <div id="jsonForm">
+        <form>
+            <table>
+                <tr>
+                    <td>
+                    <label for="asset">Asset Name</label><br>
+                    <input type="text" id="asset" name="asset" placeholder="EXAMPLEPEPE"><br>
+                    </td>
+                    <td>
+                    <label for="supply">Supply</label><br>
+                    <input type="text" id="supply" name="supply" placeholder="Asset supply"><br>
+                    </td>
+                </tr>
 
-        <label for="issuer_address">Issuer Address</label><br>
-        <input type="text" id="issuer_address" name="issuer_address" placeholder="XCP Address"><br>
+                <tr>
+                    <td>
+                    <label for="issuer_address">Issuer Address</label><br>
+                    <input type="text" id="issuer_address" name="issuer_address" placeholder="XCP Address"><br>
+                    </td>
+                    <td>
+                    <label for="owner_address">Owner Address</label><br>
+                    <input type="text" id="owner_address" name="owner_address" placeholder="XCP Address"><br>
+                    </td>
+                </tr>
 
-        <label for="owner_address">Owner Address</label><br>
-        <input type="text" id="owner_address" name="owner_address" placeholder="XCP Address"><br>
+                <tr>
+                    <td>
+                    <label for="thumbnail">48 x 48px Image Thumbnail URL</label><br>
+                    <input type="text" id="thumbnail" name="thumbnail" placeholder="http://i.imgur.com/pepe.png"><br>
+                    </td>
+                    <td>
+                    <label for="image">400 x 560px Image URL</label><br>
+                    <input type="text" id="image" name="image" placeholder="http://i.imgur.com/pepe.png"><br>
+                    </td>
+                </tr>
 
-        <label for="supply">Supply</label><br>
-        <input type="text" id="supply" name="supply" placeholder="Asset supply"><br>
+                <tr>
+                    <td>
+                    <input type="submit" onClick="createJSON();" value="Save As JSON">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>
+                <span class="title">NAME</span>: You need to use the same asset name as you have used on your XCP asset.
+            </li><br>
 
-        <label for="thumbnail">48 x 48px Image Thumbnail URL</label><br>
-        <input type="text" id="thumbnail" name="thumbnail" placeholder="http://i.imgur.com/pepe.png"><br>
+            <li>
+                <span class="title">IMAGE</span> We need to get the image/thumbnail URL, you can either host the images yourself or host them at <a href="https://imgur.com/upload">Imgur</a>. If you choose to host at imgur, you need to be certain you get copy the image link, not the webpage link. Click copy link, make sure it doesn't say "undefined", and make sure it has the correct file suffix, i.e: ".jpg," ".png". NOTE: I will NOT host your image, sorry.
+            </li><br>
 
-        <label for="image">400 x 560px Image URL</label><br>
-        <input type="text" id="image" name="image" placeholder="http://i.imgur.com/pepe.png"><br>
+            <li>
+                <span class="title">ADDRESS</span>: There are two addresses, they will most likely be the same. The issuer address is the XCP address that "issued" the token; the owner address is the XCP address that currently "owns" the asset.
+            </li><br>
 
-        <input type="submit" onClick="createJSON();" value="Save As JSON">
-    </form>
+            <li>
+                <span class="title">SUPPLY</span>: This is self-explanatory. Changing supply here will not change real token (to the one nong that will try).
+            </li><br>
+
+            <li>
+                <span class="title">THUMBNAIL</span>: The thumbnail URL MUST BE a 48x48 pixel PNG. Freewallet, and Xchain will not recognise your thumbnail otherwise and your asset will look jankus as fuck. This is the thumbnail URL you got from Imgur/Your own hosting.
+            </li><br>
+
+            <li>
+                <span class="title">IMAGE</span>: This is your FULL SIZE (400 x 560 pixel) image. It can be of any format, including gif.
+            </li><br>
+
+            <li>
+                <span class="title">SAVE</span>: Save the JSON file and send it to: hello.fabrique@protonmail.com; OR host it yourself and place the URL in the asset description.
+            </li><br>
+
+            <li>
+                <span class="title">FINALLY</span>: I will upload it when I get the time, and return to you the URL for the JSON file. When you get the URL simply replace your asset's description with the URL and when the server caches refresh your NFT images and detail will be live.
+            </li><br>
+        </ol>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>

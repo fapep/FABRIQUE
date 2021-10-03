@@ -12,7 +12,7 @@ form {
     margin: 0.5em 0.5em 0.5em 1em;
 }
 
-form > input {
+td > input {
     margin: 0.5em 0.5em 0.5em 0.5em;
 
     color: rgb(242,242,247);
@@ -22,4 +22,29 @@ form > input {
 h1 {
     margin: 0.5em;
     color: rgb(255,45,85);
+}
+
+h2 {
+    margin: 0.5em;
+    color: rgb(48,209,88)
+}
+
+a:link {
+    color: rgb(48,209,88);
+}
+
+a:visited {
+    color: rgb(48,209,88);
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: rgb(48,209,88);
+}
+
+.title {
+    color: rgb(48,209,88)
 }
