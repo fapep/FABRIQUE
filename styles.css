@@ -45,6 +45,7 @@ a:active {
     color: rgb(48,209,88);
 }
 
-.title {
+li > .title {
+    text-decoration: none;
     color: rgb(48,209,88)
 }
