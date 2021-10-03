@@ -81,13 +81,13 @@ h4 {
     padding: 1em;
 }
 
-td {
+.cell {
     vertical-align: top;
     text-align: left;
     border-top: 1px solid rgb(48,209,88);
 }
 
-td > img {
+.cell > img {
     vertical-align: middle;
     text-align: center;
 }
