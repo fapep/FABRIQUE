@@ -1,2 +1,2 @@
-# PEPE_JSON
-Ingests data and returns PEPE JSON
+# NFT_JSON
+ Ingests asset data and returns JSON format for XCP assets
